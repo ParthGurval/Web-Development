@@ -1,0 +1,113 @@
+<!DOCTYPE html>
+<html lang="en">
+
+<head>
+    <meta charset="UTF-8">
+    <meta name="viewport" content="width=device-width, initial-scale=1.0">
+    <title>Discount Calculator</title>
+    <link rel="preconnect" href="https://fonts.googleapis.com">
+    <link rel="preconnect" href="https://fonts.gstatic.com" crossorigin>
+    <link href="https://fonts.googleapis.com/css2?family=Noto+Serif:wght@500&family=PT+Mono&family=Sofia&display=swap"
+        rel="stylesheet">
+    <style>
+
+        body{
+            background-image: linear-gradient(to right, rgba(128, 190, 255, 1), rgba(128, 142, 255, 1), rgba(120, 90, 255, 1));
+        }
+
+        fieldset {
+            margin-left: 450px;
+            margin-right: 450px;
+            margin-top: 100px;
+            border-radius: 15px;
+            background-color: white;
+            border-color: white;
+        }
+
+        .head, h2 {
+            font-family: 'Noto Serif', serif;
+            text-align: center;
+            background-color: #0C64FF;
+            color: white;
+        }
+
+        p, label {
+            font-family: 'PT Mono', monospace;
+            color: #3493FF;
+            font-weight: bold;
+        }
+
+        p{
+            font-size: 1rem;
+        }
+
+        .inp {
+            width: 400px;
+            padding-top: 5px;
+            padding-bottom: 5px;
+            font-family: 'PT Mono', monospace;
+            border-color: #D3D3D3;
+        }
+
+        .inp:hover{
+            border-color: #0C64FF;
+        }
+
+        .bt1 {
+            width: 400px;
+            border-radius: 10px;
+            padding-top: 5px;
+            padding-bottom: 5px;
+            background-color: #4caf50;
+        }
+
+        .bt1:hover{
+            background-color: burlywood;
+        }
+
+        .bt2{
+            width: 400px;
+            border-radius: 10px;
+            padding-top: 5px;
+            padding-bottom: 5px;
+            background-color: #3C98FF;
+        }
+
+        .bt2:hover{
+            background-color: #FF3C3C;
+        }
+    </style>
+</head>
+
+<body>
+    <div class="dcl">
+    <fieldset>
+        
+
+            <div class="head">
+                <h2>Discount Calculator</h2>
+            </div>
+
+            <div>
+                <p>Please Enter the billing amount and discount in percentage</p><br>
+
+                <label>Bill Amount</label><br><br>
+
+                <input type="number" class="inp"><br><br>
+
+                <label>Dicount Percentage</label><br><br>
+
+                <input type="number" class="inp"><br><br>
+
+                <button type="submit" class="bt1">Calculate</button><br><br>
+
+                <button type="reset" class="bt2">Reset Values</button><br><br>
+
+                <p>Total Discount Amount</p>
+            </div>
+        
+    </fieldset>
+</div>
+</body>
+
+</html>
