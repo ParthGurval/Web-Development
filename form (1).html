@@ -1,0 +1,184 @@
+<!DOCTYPE html>
+<html lang="en">
+  <head>
+    <meta charset="UTF-8" />
+    <meta name="viewport" content="width=device-width, initial-scale=1.0" />
+    <title>Form</title>
+    <link rel="preconnect" href="https://fonts.googleapis.com">
+    <link rel="preconnect" href="https://fonts.gstatic.com" crossorigin>
+    <link href="https://fonts.googleapis.com/css2?family=Poppins:wght@600&family=Rubik+Dirt&family=Signika+Negative&family=Sofia&display=swap" rel="stylesheet">
+    <style>
+
+      body{
+        background-image: linear-gradient(to right, rgba(128, 190, 255, 1), rgba(128, 142, 255, 1), rgba(120, 90, 255, 1));
+      }
+
+      fieldset{
+        background-color: white;
+        border-radius: 10px;
+        margin-right: 800px;
+      }
+
+      h2{
+        font-family: 'Rubik Dirt', cursive;
+        color: #6028FF;
+      }
+
+      label{
+        font-family: 'Signika Negative', sans-serif;
+        color: #6028FF;
+      }
+
+      input[type="text"], input[type="number"], input[type="email"], input[type="password"], input[type="tel"], input[type="date"], input[type="week"], input[type="time"]{
+        width: 200px;
+        height: 18px;
+        font-family: 'Signika Negative', sans-serif;
+        font-size: 1.2rem;
+        border-radius: 15px;
+      } 
+
+      .select{
+        width: 200px;
+        height: 18px;
+        font-family: 'Signika Negative', sans-serif;
+        font-size: 1rem;
+        border-radius: 15px;
+      }
+
+      .addr textarea{
+        border-radius: 15px;
+      }
+
+      #bt1{
+        width: 200px;
+        border-radius: 15px;
+        color: white;
+        background-image: linear-gradient(to right, rgba(128, 190, 255, 1), rgba(128, 142, 255, 1), rgba(120, 90, 255, 1));
+        font-family: 'Poppins', sans-serif;
+
+      }
+
+      #bt2{
+        width: 200px;
+        border-radius: 15px;
+        color: white;
+        background-image: linear-gradient(to right, rgba(128, 190, 255, 1), rgba(128, 142, 255, 1), rgba(120, 90, 255, 1));
+        font-family: 'Poppins', sans-serif;
+
+      }
+    </style>
+  </head>
+  <body>
+    <fieldset>
+      <legend><h2>Student Registration Form</h2></legend>
+      <table>
+        <tbody>
+          <form>
+            <tr>
+              <td>
+                <label for="fName"> First Name </label>
+              </td>
+              <td>
+                <input id="fName" type="text" autofocus required placeholder="Only Capitals" maxlength="10"/>
+              </td>
+            </tr>
+            <tr>
+              <td>
+                <label> Last Name </label>
+              </td>
+              <td>
+                <input type="text" placeholder="Only caps" required  maxlength="18"/>
+              </td>
+            </tr>
+            <tr>
+              <td><label> Age </label></td>
+              <td>
+                <input type="number" required placeholder="Only age  >= 18 allowed" />
+              </td>
+            </tr>
+            <tr>
+              <td><label> Name of your country </label></td>
+              <td><input type="text" value="India" readonly /></td>
+            </tr>
+            <tr>
+              <td><label> Email </label></td>
+              <td><input type="email" /></td>
+            </tr>
+            <tr>
+              <td><label> Password </label></td>
+              <td><input type="password" /></td>
+            </tr>
+            <tr>
+              <td><label> Mobile </label></td>
+              <td><input type="tel" /></td>
+            </tr>
+            <tr>
+              <td><label> Date Of Birth </label></td>
+              <td><input type="date" /></td>
+            </tr>
+            <tr>
+              <td><label>Select Available for discussion</label></td>
+              <td><input type="week" /></td>
+            </tr>
+            <tr>
+              <td><label>Suitable Time</label></td>
+              <td><input type="time" /></td>
+            </tr>
+            <tr>
+              <td><label> Select Gender </label></td>
+              <td>
+                <input type="radio" name="gender" /> <label> Male</label>
+                <input type="radio" name="gender" /> <label> Female </label>
+                <input type="radio" name="gender" /> <label> Other</label>
+              </td>
+            </tr>
+            <tr>
+              <td><label>Technology Stack</label></td>
+              <td>
+                <input type="checkbox" /> <label> C </label>
+                <input type="checkbox" /> <label> CPP </label>
+                <input type="checkbox" /> <label> Java </label>
+                <input type="checkbox" /> <label> Angular </label>
+                <input type="checkbox" /> <label> React </label>
+                <input type="checkbox" /> <label> DevOps </label>
+                <input type="checkbox" /> <label> CI/CD Tools </label>
+              </td>
+            </tr>
+            <tr>
+              <td><label> Upload photo </label></td>
+              <td><input type="file" /></td>
+            </tr>
+            <tr>
+              <td><label> Upload Documents</label></td>
+              <td><input type="file" multiple /></td>
+            </tr>
+            <tr>
+              <td>
+                <label> Select your State </label>
+              </td>
+              <td>
+                <select class="select">
+                  <option value="Maharashtra">Maharashtra</option>
+                  <option value="Karnatka">Karnatka</option>
+                  <option value="AP">Andra Pradesh</option>
+                  <option value="UP">UP</option>
+                  <option value="Bihar">Bihar</option>
+                </select>
+              </td>
+            </tr>
+            <tr class="addr">
+              <td><label> Address </label></td>
+              <td>
+                <textarea cols="50" rows="8"></textarea>
+              </td>
+            </tr>
+            <tr>
+              <td><button type="submit" id="bt1">Register</button></td>
+              <td><button type="reset" id="bt2">Reset</button></td>
+            </tr>
+          </form>
+        </tbody>
+      </table>
+    </fieldset>
+  </body>
+</html>
