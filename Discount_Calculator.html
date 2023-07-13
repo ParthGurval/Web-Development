@@ -15,13 +15,34 @@
             background-image: linear-gradient(to right, rgba(128, 190, 255, 1), rgba(128, 142, 255, 1), rgba(120, 90, 255, 1));
         }
 
-        fieldset {
+        .container{
+            border: 2px solid white;
+            background-color: white;
+            margin-left: 400px;
+            margin-right: 400px;
+            margin-top: 180px;
+            border-radius: 15px;
+            padding-top: 0px;
+        }
+
+        /* fieldset {
             margin-left: 450px;
             margin-right: 450px;
             margin-top: 100px;
             border-radius: 15px;
             background-color: white;
             border-color: white;
+        } */
+
+        .head{
+            
+            background-color: #0C64FF;
+            margin-top: 0px;            
+        }
+
+        h2{
+            margin-top: 0px;
+            border-radius: 15px;
         }
 
         .head, h2 {
@@ -31,6 +52,10 @@
             color: white;
             text-transform: uppercase;
         }
+
+        .content{
+            margin-left: 20px;
+        }     
 
         p, label {
             font-family: 'PT Mono', monospace;
@@ -80,16 +105,15 @@
     </style>
 </head>
 
-<body>
-    <div class="dcl">
-    <fieldset>
+<body> 
         
+        <div class="container">
 
             <div class="head">
                 <h2>Discount Calculator</h2>
             </div>
 
-            <div>
+            <div class="content">
                 <p>Please Enter the billing amount and discount in percentage</p><br>
 
                 <label>Bill Amount</label><br><br>
@@ -107,8 +131,8 @@
                 <p>Total Discount Amount</p>
             </div>
         
-    </fieldset>
-</div>
+        </div>
+
 </body>
 
 </html>
