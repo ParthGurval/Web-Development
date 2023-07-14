@@ -1,0 +1,124 @@
+<!DOCTYPE html>
+<html lang="en">
+<head>
+    <meta charset="UTF-8">
+    <meta name="viewport" content="width=device-width, initial-scale=1.0">
+    <title>Subscription</title>
+    <link rel="preconnect" href="https://fonts.googleapis.com">
+    <link rel="preconnect" href="https://fonts.gstatic.com" crossorigin>
+    <link href="https://fonts.googleapis.com/css2?family=Merriweather:wght@700&family=Noto+Serif+Makasar&family=PT+Sans&family=Sofia&display=swap" rel="stylesheet">
+    <style>
+        
+        body{
+            background-color: #F0F8FF;
+        }
+
+        .container{
+            border: 2px solid black;
+            margin-left: 575px;
+            margin-right: 600px;
+            margin-top: 100px;
+            background-color: white;            
+        }
+
+        .head{
+            margin-left: 30px;
+            padding-right: 20px;
+        }
+
+        h2{
+            font-family: 'Noto Serif Makasar', serif;
+        }
+
+        p{
+            font-family: 'PT Sans', sans-serif;
+        } 
+
+        .sec1{
+            margin-left: 30px;
+            margin-bottom: 20px;
+        }
+
+        .para{
+            border: 1px solid white;
+            border-radius: 10px;
+            background-color: #3B94FF;
+            color: white;
+            padding: 5px 5px 5px 5px;
+            margin-left: 1px;
+        }
+
+        .inp{
+            width: 280px;
+            height: 25px;
+            background-color: #E6E6FA;
+            border: 2px solid #E6E6FA;
+        }
+
+        .inp:hover{
+            border-color: #0476FF;
+        }
+
+        .req{
+            color: red;
+        }
+
+        #textarea{
+            resize: none;
+            background-color: #E6E6FA;
+            border: 2px solid #E6E6FA;  
+        }
+
+        .textarea.hover{
+            border-color: #0476FF;
+        }
+
+        .btn{
+            margin-left: 200px;
+            background-color: #3B94FF;
+            border: 2px solid #3B94FF;
+            color: white;
+            border-radius: 10px;
+            padding: 5px 5px 5px 5px;
+            font-family: 'Merriweather', serif;
+        }
+
+        .label{
+            font-family: 'Merriweather', serif;
+        }
+
+    </style>
+</head>
+<body>
+
+    <div class="container">
+
+        <div class="head">
+        <h2>Subscription</h2>
+
+        <hr>
+
+        <p class="para">
+            We're sorry to see you go, but hey, no hard feelings, hopefully we will see you back one day.<br>
+            Please fill in your email address in order to unsubscribe from the list.<br>
+            You will receive an email to confirm your unsubscription, just to make sure this is not an accident or somebody else tries to
+            unsubscribe you.
+        </p>
+        </div><br>
+
+        <div class="sec1">
+        <label for="email" class="label">Email<span class="req">*</span></label><br><br>
+
+        <input type="text" class="inp" required placeholder="exp@gmail.com"><br><br>
+
+        <label class="label">unsubscription Reason</label><br><br>
+
+        <textarea rows="4" cols="36" id="textarea" placeholder="Please mention here your unsubscription reason"></textarea><br><br>
+
+        <button class="btn">unsubscribe</button>
+        </div>
+
+    </div>
+    
+</body>
+</html>
