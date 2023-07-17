@@ -1,0 +1,171 @@
+<!DOCTYPE html>
+<html lang="en">
+<head>
+    <meta charset="UTF-8">
+    <meta name="viewport" content="width=device-width, initial-scale=1.0">
+    <title>Subscription Plans</title>
+    <link rel="preconnect" href="https://fonts.googleapis.com">
+    <link rel="preconnect" href="https://fonts.gstatic.com" crossorigin>
+    <link href="https://fonts.googleapis.com/css2?family=Libre+Baskerville&family=Lobster&family=Russo+One&family=Sofia&display=swap" rel="stylesheet">
+    <style>
+
+        body{
+            background-color: rgb(248,248,255);
+        }
+        
+        .plan1{
+            display: inline-block;
+            border: 2px solid #E2E2E2;
+            border-radius: 10px;
+            margin-top: 230px;
+            margin-left: 400px; 
+            position: static; 
+            background-color: rgb(255,250,250);                      
+        }
+
+        .plan2{
+            display: inline-block;
+            border: 2px solid #E2E2E2;
+            border-radius: 10px;
+            margin-top: 10px;
+            margin-left: 80px;
+            z-index: 100px;
+            background-color: rgb(255,250,250);                      
+        }
+        .plan2:hover{
+            position: absolute;
+        }
+
+        .plan3{
+            display: inline-block;
+            border: 2px solid #E2E2E2;
+            border-radius: 10px;
+            margin-top: 10px;
+            margin-left: 380px;
+            position: static ;
+            background-color: rgb(255,250,250);                      
+        }
+
+        .tlt{
+            text-align: center;
+            margin-top: 0px;
+            margin-left: 0px;
+            margin-right: 0px;
+            background-color: #2BA430;
+            border: 1px solid #2BA430;
+            border-top-left-radius: 10px;
+            border-top-right-radius: 10px;
+            color: white;
+            font-family: 'Russo One', sans-serif;
+            font-size: 2rem;
+            padding: 10px 15px 10px 15px;
+        }
+
+        .tlt:hover{
+            background-color: red;
+        }
+
+        ul li{
+            margin-right: 20px;
+            list-style-type: none;
+            padding-top: 5px;
+            padding-bottom: 5px;
+            font-family: 'Libre Baskerville', serif;
+        }
+
+        ul .rh::before{
+            content: '✅';
+            margin-right: 10px;
+        }
+
+        ul .wr::before{
+            content: '❌';
+            margin-right: 10px;
+        }
+
+        button{
+            margin-left: 40px;
+            margin-bottom: 25px;
+            padding: 7px 30px 7px 30px;
+            font-family: 'Lobster', cursive;
+            font-size: 23px;
+            background-color: #1D8321;
+            color: white;
+        }
+
+        button:hover{
+            background-color: #12FF1D;
+        }
+
+        span{
+            margin-left: 80px;
+            text-align: center;
+            font-family: 'Sofia', cursive;
+            font-size: 2rem;
+            font-weight: bolder;
+        }
+
+    </style>
+</head>
+<body>
+    
+    <div class="container">
+
+        <div class="plan1">
+
+            <div class="tlt">Basic</div>
+
+            <ul class="ul1">
+                <li class="rh">Hosting</li>
+                <li class="wr">Domain</li>
+                <li class="rh">1 GB Space</li>
+                <li class="wr">Free SSL</li>
+                <li class="rh">1 Website Host</li>
+            </ul>
+
+            <span > $ 5 </span><br><br>
+
+            <button>Buy Now</button>
+
+        </div>
+
+        <div class="plan2">
+
+            <div class="tlt">Standard</div>
+
+            <ul>
+                <li class="rh">Hosting</li>
+                <li class="rh">Domain</li>
+                <li class="rh">10 GB Space</li>
+                <li class="wr">Free SSL</li>
+                <li class="rh">4 Website Host</li>
+            </ul>
+
+            <span> $ 10 </span><br><br>
+
+            <button>Buy Now</button>
+
+        </div>
+
+        <div class="plan3">
+
+            <div class="tlt">Premium</div>
+
+            <ul>
+                <li class="rh">Hosting</li>
+                <li class="rh">Domain</li>
+                <li class="rh">10 GB Space</li>
+                <li class="rh">Free SSL</li>
+                <li class="rh">4 Website Host</li>
+            </ul>
+
+            <span> $ 20 </span><br><br>
+
+            <button>Buy Now</button>
+
+        </div>
+
+    </div>
+
+</body>
+</html>
