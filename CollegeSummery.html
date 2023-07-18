@@ -12,11 +12,11 @@
 
        .container{
         position: static;
-        margin-top: 100px;
+        margin-top: 50px;
         margin-left: 550px;
         margin-right: 400px;
         padding: 20px 20px 20px 20px;
-        border: 2px solid black;
+        border: 2px solid white;
        }
 
        .head{
@@ -40,9 +40,9 @@
         display: flex; /* Add flex display to align lines */
        }
 
-        ul li.ln1::before {
-        content: "\f0c0"; /* Replace with the desired Font Awesome icon code */
-        font-family: "FontAwesome"; /* Ensure correct Font Awesome font-family */
+        /* ul li.ln1::before {
+        content: "\f0c0"; 
+        font-family: "FontAwesome"; 
         margin-right: 25px;
         font-size: 20px;
         color: #24AA2E;
@@ -86,17 +86,29 @@
         margin-right: 25px;  
         font-size: 20px;
         color: #24AA2E;
+        } */
+
+        table, td, tr{
+            padding-bottom: 20px;
+            font-family: 'Libre Baskerville', serif;
+        }
+
+        .fa{
+            color: #24AA2E;
+            font-size: 25px;
+            position: relative;
+            display: inline-block;
+            margin-right: 20px;
         }
 
        span{
             color: #00C1FF;
-
-            margin-right: 5px;
+            display: inline-block;
         }
 
         img{
             width: 500px;
-            height: 300px;
+            height: 200px;
         }
 
         
@@ -110,14 +122,33 @@
 
             <h2 class="head">why Summer School <br>at great laked?</h2>
 
-            <ul >
-                <li class="ln1"><span>Business, team and leadership</span>skill and learn what it takes to succeed in the real world.</li>
-                <li class="ln2"><span>Understand in the depthabout complexity of society</span>Understand in the depthabout complexity of society & businesses in the digital age.</li>
-                <li class="ln3"><span>Learn Structured decision</span>makingthrough case-based discussion.</li>
-                <li class="ln4"><span>Get hands-on experienceof the real world</span>scenarios through simulation, gamifield and <br> experiential learning.</li>
-                <li class="ln5"><span>Employ the design thinking & learn</span>leveranging data for better decison making.</li>
-                <li class="ln6"><span>Strengthen your profile and CV with</span>industry skills gained along with Great Lakes certificates. </li>
-            </ul>
+            <table>
+                <tr>
+                    <td><i class="fa fa-users" aria-hidden="true"></i></td>
+                    <td><p><span>Gain Business, team and leadership skill</span> and learn<br> what it takes to succeed in the real world.</p></td>
+                </tr>
+                <tr>
+                    <td><i class="fa fa-lightbulb-o" aria-hidden="true"></i>
+                    </td>
+                    <td><span>Understand in the depth</span> about complexity of society Understand in the depthabout complexity of society &<br> businesses in the digital age.</td>
+                </tr>
+                <tr>
+                    <td><i class="fa fa-laptop" aria-hidden="true"></i></td>
+                    <td><span>Learn Structured decision making through</span><br> case-based discussion.</td>
+                </tr>
+                <tr>
+                    <td><i class="fa fa-handshake-o" aria-hidden="true"></i></td>
+                    <td><span>Get hands-on experience</span> of the <span>real world</span><br> <span>scenarios</span> through simulation, gamifield and experiential learning.</td>
+                </tr>
+                <tr>
+                    <td><i class="fa fa-pencil-square-o" aria-hidden="true"></i></td>
+                    <td><span>Employ the design thinking</span> & learn leveranging data for<br> better decison making.</td>
+                </tr>
+                <tr>
+                    <td><i class="fa fa-file-powerpoint-o" aria-hidden="true"></i></td>
+                    <td><span>Strengthen your profile</span> and CV with industry skills<br> gained along with Great Lakes certificates.</td>
+                </tr>
+            </table>
 
         </div>
 
