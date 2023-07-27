@@ -1,53 +1,100 @@
 <!DOCTYPE html>
-<html lang="en">
+<html>
 <head>
-    <meta charset="UTF-8">
-    <meta name="viewport" content="width=device-width, initial-scale=1.0">
-    <title>Document</title>
-    <style>
+  <title>Rowspan and Colspan Example</title>
+  <style>
+    table {
+      border-collapse: collapse;
+      width: 50%;
+      border: 1px solid #ccc;
+    }
 
-        .container{
-            border: 2px solid black;
-        }
+    th, td {
+      border: 1px solid #ccc;
+      padding: 8px;
+      text-align: center;
+    }
 
-        .head{
-            display: inline-block;
-        }
+    th {
+      background-color: #f2f2f2;
+    }
 
-        .foot{
-            display: inline-block;
-        }
+    tr:nth-child(even) {
+      background-color: #f2f2f2;
+    }
 
-        .cs1{
-            display: inline-block;
-        }
-
-        img{
-            width: 200px;
-            height: 200px;
-        }
-
-    </style>
-
+    tr:hover {
+      background-color: #ddd;
+    }
+  </style>
 </head>
 <body>
-
-    <div class="container">
-
-        <div class="head">
-            <img src="Pictures/desktop_img.jpeg">
-        </div>
-
-        <div class="foot">
-            <img src="Pictures/maxresdefault.jpg">
-
-        </div>
-
-        <div class="cs1">
-            Lorem ipsum, dolor sit amet consectetur adipisicing elit. Corporis doloremque nemo in pariatur sunt veritatis aliquam, iste, placeat tenetur architecto cum. Voluptatum nam veniam accusantium tempore optio dolorum, et blanditiis ipsam magnam architecto tempora error, sit, soluta facere repellendus ab fugiat quae esse corporis odit. Ipsa natus quas qui hic.
-        </div>
-
-    </div>   
-    
+  <table>
+    <tr>
+      <td colspan="3">Header 1<br>(Spans 3 columns)</td>
+      <td>Header 2</td>
+      <td>Header 3</td>
+      <td>Header 4</td>
+      <td>Header 5</td>
+    </tr>
+    <tr>
+      <td rowspan="3">Row 1, Cell 1<br>(Spans 3 rows)</td>
+      <td>Row 1, Cell 2</td>
+      <td>Row 1, Cell 3</td>
+      <td>Row 1, Cell 4</td>
+      <td>Row 1, Cell 5</td>
+      <td>Row 1, Cell 6</td>
+      <td>Row 1, Cell 7</td>
+    </tr>
+    <tr>
+      <!-- This row only has four cells because the first cell is already spanned by the previous row -->
+      <td>Row 2, Cell 2</td>
+      <td>Row 2, Cell 3</td>
+      <td>Row 2, Cell 4</td>
+      <td>Row 2, Cell 5</td>
+      <td>Row 2, Cell 6</td>
+    </tr>
+    <tr>
+      <!-- This row only has four cells because the first cell is already spanned by the first row -->
+      <td>Row 3, Cell 2</td>
+      <td>Row 3, Cell 3</td>
+      <td>Row 3, Cell 4</td>
+      <td>Row 3, Cell 5</td>
+      <td>Row 3, Cell 6</td>
+    </tr>
+    <!-- Rows 4, 5, and 6 will be spanned by the first cell in the previous rows -->
+    <tr>
+      <td>Row 4, Cell 2</td>
+      <td>Row 4, Cell 3</td>
+      <td>Row 4, Cell 4</td>
+      <td>Row 4, Cell 5</td>
+      <td>Row 4, Cell 6</td>
+      <td>Row 4, Cell 7</td>
+    </tr>
+    <tr>
+      <td>Row 5, Cell 2</td>
+      <td>Row 5, Cell 3</td>
+      <td>Row 5, Cell 4</td>
+      <td>Row 5, Cell 5</td>
+      <td>Row 5, Cell 6</td>
+      <td>Row 5, Cell 7</td>
+    </tr>
+    <tr>
+      <td>Row 6, Cell 2</td>
+      <td>Row 6, Cell 3</td>
+      <td>Row 6, Cell 4</td>
+      <td>Row 6, Cell 5</td>
+      <td>Row 6, Cell 6</td>
+      <td>Row 6, Cell 7</td>
+    </tr>
+    <!-- Rows 7 will be spanned by the first cell in the previous rows -->
+    <tr>
+      <td colspan="3">Row 7, Cell 1<br>(Spans 3 columns)</td>
+      <td>Row 7, Cell 2</td>
+      <td>Row 7, Cell 3</td>
+      <td>Row 7, Cell 4</td>
+      <td>Row 7, Cell 5</td>
+    </tr>
+  </table>
 </body>
 </html>
