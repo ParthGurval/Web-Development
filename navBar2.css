@@ -29,26 +29,39 @@ nav .logo{
   font-weight: 600;
   letter-spacing: -1px;
 }
+
+nav .logo:hover{
+  color: #26d63b;
+}
+
+
+/* This code is for making all nav elements horizontal */
 nav .nav-items{
   display: flex;
   flex: 1;
   padding: 0 0 0 40px;
 }
+
+/* space between nav items */
 nav .nav-items li{
   list-style: none;
   padding: 0 15px;
 }
+
+/* color for item */
 nav .nav-items li a{
   color: #fff;
   font-size: 18px;
   font-weight: 500;
   text-decoration: none;
 }
+
+/* hover for item */
 nav .nav-items li a:hover{
   color: #26d63b;
 }
 
-.dropdown {
+/* .dropdown {
   float: left;
   overflow: hidden;
 }
@@ -68,7 +81,7 @@ nav .nav-items li a:hover{
   background-color: red;
 }
 
-/* .dropdown-content {
+.dropdown-content {
   display: none;
   position: absolute;
   background-color: #f9f9f9;
@@ -94,6 +107,8 @@ nav .nav-items li a:hover{
   display: block;
 }  */
 
+
+/* connects search box and button */
 nav .searchForm{
   display: flex;
   height: 40px;
@@ -102,6 +117,8 @@ nav .searchForm{
   border: 1px solid rgba(155,155,155,0.2);
   border-radius: 36px;
 }
+
+/* includes button inside search box */
 nav .searchForm .search-data{
   width: 100%;
   height: 100%;
@@ -112,6 +129,8 @@ nav .searchForm .search-data{
   font-weight: 500;
   background: none;
 }
+
+/* css over search box and button */
 nav .searchForm button{
   padding: 0 15px;
   color: #fff;
@@ -124,9 +143,12 @@ nav .searchForm button{
   cursor: pointer;
 }
 
+/* css hover only search box and button */
 nav .searchForm button:hover{
   background: #2b9638;
 }
+
+/* css over icon */
 nav .menu-icon,
 nav .search-icon{
   width: 40px;
