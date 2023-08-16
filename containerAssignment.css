@@ -1,0 +1,95 @@
+
+
+.container{
+
+    height: 400%;
+    width: 100%;
+    border: 2px solid black;
+}
+
+.sectHead{
+
+    height: 200px;
+    width: 200px;
+}
+
+.sect2 {
+
+    height: 200px;
+    width: 200px;
+}
+
+.sectNav1 .sectNav2 .sectNav3 .sectNav4{
+
+    height: 200%;
+    width: 100px;
+    display: inline-block;
+}
+
+/* .sect2 .sectNav1{
+
+}
+
+.sect2 .sectNav2{
+
+}
+
+.sect2 .sectNav3{
+
+}
+
+.sect2 .sectNav4{
+
+} */
+
+.sect3{
+
+    height: 500px;
+    width: 500px;
+}
+
+.sec3 .left-top-box{
+
+    height: 100px;
+    width: 150px;
+}
+
+.sec3 left-bottom-box{
+
+    height: 100px;
+    width: 150px;
+}
+
+.sect3 .top-Mid-box{
+
+    height: 350px;
+    width: 350px;
+}
+
+.sec3 .Right-top-box{
+
+    height: 100px;
+    width: 150px;
+
+}
+
+.sec3 .Right-Mid-box{
+
+    height: 100px;
+    width: 150px;
+
+}
+
+.sec3 .Right-bottom-box{
+
+    height: 100px;
+    width: 150px;
+
+}
+
+.sectFooter{
+    
+    height: 200px;
+    width: 200px;
+
+}
