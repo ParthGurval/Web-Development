@@ -1,0 +1,78 @@
+
+
+.container{
+    background-color: bisque;
+    height: 65rem;
+    width: 130rem;
+
+}
+
+.gridContainer{
+    background-color: cadetblue;
+    height: 58rem;
+    width: 120rem;
+    display: grid;   
+    /* grid-template-columns: 133px 133px 133px 133px; 
+    grid-template-rows: 133px 133px 133px; */
+    grid-template-columns: repeat(4, 20rem);
+    grid-template-rows: repeat(5, 12rem);
+
+}
+
+.item-1, .item-2, .item-3, .item-4{
+
+    background-color: red;
+} 
+
+/* [class^="item-1"] {
+
+    background-color: blue;
+    height: 122px;
+    width: 122px;
+
+} */
+
+/* .item-1{
+    background-color: red;
+    height: 5rem;
+    width: 15rem;
+} */
+
+[class^="item-"].item-1,
+[class^="item-"].item-2,
+[class^="item-"].item-3,
+[class^="item-"].item-4{
+
+    background-color: blue;
+    height: 5rem;
+    width: 18rem;
+    display: flex;
+    flex-direction: column;
+}
+
+
+[class^="item-"].item-5,
+[class^="item-"].item-6,
+[class^="item-"].item-7,
+[class^="item-"].item-8,
+[class^="item-"].item-9,
+[class^="item-"].item-10,
+[class^="item-"].item-11,
+[class^="item-"].item-12,
+[class^="item-"].item-13,
+[class^="item-"].item-14,
+[class^="item-"].item-15,
+[class^="item-"].item-16,
+[class^="item-"].item-17,
+[class^="item-"].item-18{
+
+    background-color: blue;
+    height: 10rem;
+    width: 18rem;
+    display: flex;
+    flex-direction: column;
+}
+
+[class^="item-"].item-6{
+    width: 7rem;
+}

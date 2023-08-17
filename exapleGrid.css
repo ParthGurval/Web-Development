@@ -1,0 +1,37 @@
+
+
+.container{
+    background-color: bisque;
+    height: 65rem;
+    width: 130rem;
+    display: grid;
+    /* grid-template-columns: 133px 133px 13px;
+    grid-template-rows: 133px 133px; */
+    grid-template-columns: repeat(4, 10rem);
+    grid-template-rows: repeat(3, 10rem);
+    row-gap: 25px;
+    column-gap: 25px;
+}
+
+.item{
+
+    background-color: blue;
+    /* height: 122px;
+    width: 122px; */
+}
+
+.item-1{
+    z-index: 5;
+    background-color: red;
+    /* height: 122px;
+    width: 122px; */
+}
+
+
+[class^="item-"].item-3,
+[class^="item-"].item-4{
+
+    background-color: aqua;
+}
+
+
