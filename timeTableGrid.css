@@ -1,0 +1,287 @@
+
+
+.container{
+
+    border: 2px solid black;
+    height: 70rem;
+    width: 109rem;
+}
+
+h2{
+    position: relative;
+    display: inline-block;
+    left: 10rem;
+    font-family: 'ADLaM Display', cursive;
+    font-size: 32px;
+}
+
+select{
+    position: relative;
+    display: inline-block;
+    left: 73rem;
+    text-decoration: none;
+    border: none;
+    font-size: 18px;
+    font-weight: bolder;
+}
+
+.gridContainer{
+
+    padding: 0px;
+    margin: 0px;
+    background-color: #92CCFF;
+    height: 57rem;
+    width: 88.7rem;
+    position: absolute;
+    left: 10rem;
+    display: grid;
+    grid-template-columns: repeat(4, 22.2rem);
+    grid-template-rows: repeat(5, 6.9rem);
+}
+
+.item1, .item2, .item3, .item4{
+
+    margin: 0px;
+    background-color: #e8e8e8;
+    height: 103px;
+    width: 22rem;
+    position: relative;
+    bottom: 0px;
+}
+
+.item5, .item6{
+
+    margin: 0px;
+    background-color: lightsalmon;
+    height: 12rem;
+    width: 22rem;
+    position: relative;
+    top: 0px;
+
+}
+
+.item5{
+
+    background-color: #573975;
+}
+
+.item6{
+    background-color: lightgray;
+}
+
+.p1-1{
+
+    margin: 0;
+    padding: 0;
+    display: inline-block;
+    height: 15rem;
+    width: 10.87rem;
+    background-color: #10357d;
+
+}
+
+.p1-2{
+
+    margin: 0;
+    padding: 0;
+    display: inline-block;
+    height: 15rem;
+    width: 10.87rem;
+    background-color: #063057;    
+}
+
+.item7{
+
+    background-color: #AD5AAA;
+    height: 9rem;
+    width: 22rem;  
+}
+
+.p2{
+    
+    margin: 0;
+    padding: 0;
+    height: 5.7rem;
+    width: 22rem;
+    background-color: #b54d4c;
+    position: absolute;
+    top: 16.3rem;
+}
+
+.item8{
+
+    background-color: #17bc9c;
+    height: 7.3rem;
+    width: 22rem;  
+}
+
+.p3{
+
+    margin: 0;
+    padding: 0;
+    background-color: #11967b;
+    height: 7.3rem;
+    width: 22rem;
+    position: absolute;
+    top: 14.7rem;
+}
+
+
+
+.item9{
+
+    background-color: #8c7bbf;
+    height: 12.7rem;
+    width: 22rem;
+    position: relative;
+    top: 5.4rem;   
+}
+
+.item10{
+
+    background-color: #21A561;
+    height: 10rem;
+    width: 22rem;
+    position: relative;
+    top: 8.2rem;      
+}
+
+.item11{
+
+    background-color: lightgray;
+    height: 12rem;
+    width: 22rem;
+    position: relative;
+    top: 8.3rem
+}
+
+.p4-1{
+
+    padding: 0px;
+    margin: 0px;
+    background-color: #a13938;
+    height: 5.9rem;
+    width: 22rem;
+}
+
+.p4-2{
+
+    padding: 0px;
+    margin-top: 4px;
+    background-color: #8b302f;
+    height: 5.9rem;
+    width: 22rem;
+}
+
+.item12{
+
+    background-color: #2b75a3;
+    height: 15rem;
+    width: 22rem;
+    position: relative;
+    top: 8.3rem;
+
+}
+
+.item13, .item14{
+
+    background-color: lightsalmon;
+    height: 12rem;
+    width: 22rem;
+    position: relative;
+    top: 11.5rem;    
+}
+
+.item13{
+
+    background-color: #f3c905;
+}
+
+.item14{
+
+    background-color: #11967b;
+}
+
+.item15{
+
+    background-color: #572548;
+    height: 22.4rem;
+    width: 22rem;
+    position: relative;
+    top: 13.8rem;  
+}
+
+
+.item17, .item18{
+
+    background-color: lightsalmon;
+    height: 12.5rem;
+    width: 22rem;
+    position: relative;
+    top: 16.8rem;   
+}
+
+.item17{
+
+    background-color: #9c8fc5;
+}
+
+.item18{
+
+    background-color: #0d866f;
+}
+
+.item20{
+
+    background-color: lightgray;
+    height: 19.5rem;
+    width: 22rem;
+    position: relative;
+    top: 9.8rem;     
+}
+
+.p5-1, .p5-2, .p5-3{
+
+    margin: 0;
+    padding: 0;
+    display: inline-block;
+    height: 19.5rem;
+    width: 7.15rem;
+    background-color: lightgreen;
+}
+
+.p5-1{
+
+    background-color: #f7c607;
+}
+
+.p5-2{
+
+    background-color: #f2ae02;
+}
+
+.p5-3{
+
+    background-color: #f69b05;
+}
+
+/* .item1, .item2, .item3, .item4,
+.item5, .item6, .item7, .item8,
+.item9, .item10, .item11, .item12,
+.item13, .item14, .item15, .item16,
+.item17, .item18, .item19, .item20 {
+   
+    display: flex;
+    justify-content: center;
+    align-items: center; 
+}   
+
+.p1-1, .p1-2, .p2, .p3,
+.p4-1, .p4-2, .p5-1, .p5-2, .p5-3 {
+ 
+    display: flex;
+    flex-direction: column;
+    justify-content: center;
+    align-items: center;
+    text-align: center;
+} */
